@@ -9,11 +9,17 @@ In this scenario, a token imposes an 8% tax on all transactions, including buyin
 
 - Initial Purchase and Sale: Investors see an immediate reduction in their investment value due to the 8% tax applied when buying the token. Similarly, when selling tokens, they are hit again by the tax, diminishing the final return on their investment.
 
-- Adding and Removing Liquidity: Each time LPs add their tokens to a liquidity pool or decide to withdraw their liquidity, they incur the transaction tax. This not only reduces the value of their contribution to the pool but also eats into the profits they might earn from transaction fees within the pool.
+- Adding and Removing Liquidity: Each time Liquidity Providers (LP's) add their tokens to a liquidity pool or decide to withdraw their liquidity, they incur the transaction tax. This not only reduces the value of their contribution to the pool but also eats into the profits they might earn from transaction fees within the pool.
 
-- Fee Earnings: Profits earned from swap fees in the pool might also be subject to taxation, further reducing the attractiveness of liquidity provision as an investment strategy.
+liquidity providers (LPs) face a transaction tax specifically when removing their tokens from a liquidity pool, with an important distinction: the tax impacts not just the token with the imposed tax rate but also the native or paired token at the time of withdrawal. This tax does not apply during the addition of liquidity, However the situation changes upon liquidity removal.
 
-The compounded effect of these taxes can lead to a significant loss in token value, potentially up to 50%, from the initial investment through to the eventual sale of the tokens. This heavy tax burden makes liquidity provision unattractive and unfeasible for many investors, thereby harming the liquidity and overall health of the token ecosystem.
+- Tax on Withdrawal further considerations: When Liquidity Providers (LP's) decide to withdraw their liquidity, the transaction tax is applied to both the specific taxed token and the paired native token. This tax is levied at the rate of the taxed token, effectively reducing the total value that LPs can reclaim from the pool. This approach ensures that the initial contribution to the pool is not taxed, but the withdrawal process subjects both tokens to the taxation, affecting the overall returns from liquidity provision.
+
+- Impact on Profitability: The imposition of the tax at the point of removal directly affects the profitability of being a liquidity provider. While Liquidity Providers (LP's) can accrue transaction fees from the pool's trading activity without tax implications on those earnings, the eventual withdrawal tax reduces the net gains. This diminished profitability can make liquidity provision less appealing, as the tax erodes a portion of the returns that would otherwise incentivize participation in liquidity pools.
+
+- Fee Earnings: Profits earned from swap fees in the pool are also subject to taxation, further reducing the attractiveness of liquidity provision as an investment strategy.
+
+The compounded effect of these taxes can lead to a significant loss in token value, potentially up to 48%, from the initial investment through to the eventual sale of the tokens. This heavy tax burden makes liquidity provision unattractive and unfeasible for many investors, thereby harming the liquidity and overall health of the token ecosystem.
 
 ## Scenario with Taxes Only on Buy and Sell Transactions:
 
