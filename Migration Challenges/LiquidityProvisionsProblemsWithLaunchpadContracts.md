@@ -19,7 +19,7 @@ liquidity providers (LPs) face a transaction tax specifically when removing thei
 
 - Fee Earnings: Profits earned from swap fees in the pool are also subject to taxation, further reducing the attractiveness of liquidity provision as an investment strategy.
 
-The compounded effect of these taxes can lead to a significant loss in token value, potentially up to 48%, from the initial investment through to the eventual sale of the tokens. This heavy tax burden makes liquidity provision unattractive and unfeasible for many investors, thereby harming the liquidity and overall health of the token ecosystem.
+The compounded effect of these taxes can lead to a significant loss in token value, potentially between 40% - 48%, from the initial investment through to the eventual sale of the tokens. This heavy tax burden makes liquidity provision unattractive and unfeasible for many investors, thereby harming the liquidity and overall health of the token ecosystem.
 
 ## Scenario with Taxes Only on Buy and Sell Transactions:
 
