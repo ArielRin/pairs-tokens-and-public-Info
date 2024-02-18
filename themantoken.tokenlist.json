@@ -1,0 +1,86 @@
+{
+  "name": "The Man Token Partner Tokens List",
+  "timestamp": "2024-02-09T07:18:45.276Z",
+  "version": {
+    "major": 1,
+    "minor": 1,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://65c5733282d16f3771666e8f--monumental-donut-cd05a8.netlify.app/assets/mantoken.f74fb3d9.png",
+  "keywords": ["man", "token", "bsc", "default"],
+  "tokens": [
+    {
+      "name": "Wrapped BNB",
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+    },
+    {
+      "name": "BUSD Token",
+      "symbol": "BUSD",
+      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56.png"
+    },
+    {
+      "name": "Ethereum Token",
+      "symbol": "ETH",
+      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+    },
+    {
+      "name": "BTCB Token",
+      "symbol": "BTCB",
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x55d398326f99059fF775485246999027B3197955.png"
+    },
+    {
+      "name": "Lastman Standing Token",
+      "symbol": "MAN",
+      "address": "0x11f7ca845e1406d08e285b2e8f7989315133e59a",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x11f7ca845e1406d08e285b2e8f7989315133e59a.png"
+    },
+    {
+      "name": "Lastman Giving Token",
+      "symbol": "LMG",
+      "address": "0xA7efd5D0575cD4682B0c83155bB9e4Ff1a85a6F9",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0xA7efd5D0575cD4682B0c83155bB9e4Ff1a85a6F9.png"
+    },
+    {
+      "name": "Creed One ",
+      "symbol": "CR1",
+      "address": "0x74A740257DaC46f1c378eb81Fc2A86F4aaf2b3B1",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x74A740257DaC46f1c378eb81Fc2A86F4aaf2b3B1.png"
+    },
+    {
+      "name": "The Haus Token Degen Haus BSC",
+      "symbol": "HAUS",
+      "address": "0x30C628a85E13CD9dea174b3361c6CA267F78a1D4",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://aaaaa--superb-sopapillas-4e4a61.netlify.app/images/tokens/0x30C628a85E13CD9dea174b3361c6CA267F78a1D4.png"
+    }
+  ]
+}
