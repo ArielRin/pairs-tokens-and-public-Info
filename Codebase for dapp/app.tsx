@@ -144,7 +144,6 @@ const partnerImages = [
 
   ];
 
-  // { src: alpha7Image, alt: 'Alpha7', name: "Alpha7", url: "https://alpha7.system7.io/" },
 
 
 
@@ -1756,90 +1755,102 @@ const [buttonOpacity, setButtonOpacity] = useState(0.7);
     <>
       <ToastContainer />
 
-
       <Box p={4} color="white" bg="black">
-
         <Flex justifyContent="space-between" alignItems="center">
+          <Stack
+            direction={"row"}
+            justifyContent="center"
+            spacing={4}
+            align={"center"}
+            display={{ base: "none", md: "flex" }}
+          >
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              <LinkScroll to="token" smooth={true} duration={500}>
+                Token
+              </LinkScroll>
+            </div>
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              <LinkScroll to="staking" smooth={true} duration={500}>
+                Staking
+              </LinkScroll>
+            </div>
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              <LinkScroll to="about" smooth={true} duration={500}>
+                About
+              </LinkScroll>
+            </div>
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              <LinkScroll to="nft" smooth={true} duration={500}>
+                NFTs
+              </LinkScroll>
+            </div>
 
-                  <Stack direction={'row'} justifyContent="center" spacing={4} align={'center'} display={{ base: 'none', md: 'flex' }}>
+            <div
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "0px",
+              }}
+            >
+              <LinkScroll to="chart" smooth={true} duration={500}>
+                Chart
+              </LinkScroll>
+            </div>
+          </Stack>
 
-                  <div
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "0px",
-                    }}
-                  >
-                  <LinkScroll to="token" smooth={true} duration={500}>Token</LinkScroll>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "0px",
-                    }}
-                  >
-                  <LinkScroll to="staking" smooth={true} duration={500}>Staking</LinkScroll>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "0px",
-                    }}
-                  >
-                  <LinkScroll to="about" smooth={true} duration={500}>About</LinkScroll>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "0px",
-                    }}
-                  >
-                  <LinkScroll to="nft" smooth={true} duration={500}>NFTs</LinkScroll>
-                  </div>
-
-                  <div
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "0px",
-                    }}
-                  >
-                  <LinkScroll to="chart" smooth={true} duration={500}>Chart</LinkScroll>
-                  </div>
-
-
-
-
-
-                  </Stack>
-
-          <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <IconButton
-size={'md'}
-icon={isOpen ? <CloseIcon w={6} h={6} color="white" /> : <HamburgerIcon w={6} h={6} color="white" />}
-aria-label={'Open Menu'}
-display={{ md: 'none' }}
-onClick={onToggle}
-
-
-bg="black" // Set the background color to black
-_hover={{ bg: 'gray.700' }} // Optional: change background color on hover
-borderRadius="md" // Optional: adjust the border radius if you need rounded corners
-/>
+          <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+            <IconButton
+              size={"md"}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={6} h={6} color="white" />
+                ) : (
+                  <HamburgerIcon w={6} h={6} color="white" />
+                )
+              }
+              aria-label={"Open Menu"}
+              display={{ md: "none" }}
+              onClick={onToggle}
+              bg="black" // Set the background color to black
+              _hover={{ bg: "gray.700" }} // Optional: change background color on hover
+              borderRadius="md" // Optional: adjust the border radius if you need rounded corners
+            />
             <Collapse in={isOpen} animateOpacity>
               <Stack
-                bg={useColorModeValue('black', 'gray.900')}
+                bg={useColorModeValue("black", "gray.900")}
                 p={4}
                 marginTop="30px"
-                display={{ md: 'none' }}>
+                display={{ md: "none" }}
+              >
                 <div
                   style={{
                     fontSize: "16px",
@@ -1848,7 +1859,9 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                     marginBottom: "0px",
                   }}
                 >
-                <LinkScroll to="token" smooth={true} duration={500}>Token</LinkScroll>
+                  <LinkScroll to="token" smooth={true} duration={500}>
+                    Token
+                  </LinkScroll>
                 </div>
                 <div
                   style={{
@@ -1858,18 +1871,9 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                     marginBottom: "0px",
                   }}
                 >
-                <LinkScroll to="staking" smooth={true} duration={500}>Staking</LinkScroll>
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    textAlign: "center",
-                    marginBottom: "0px",
-                  }}
-                >
-                <LinkScroll to="about" smooth={true} duration={500}>About</LinkScroll>
+                  <LinkScroll to="staking" smooth={true} duration={500}>
+                    Staking
+                  </LinkScroll>
                 </div>
 
                 <div
@@ -1880,7 +1884,9 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                     marginBottom: "0px",
                   }}
                 >
-                <LinkScroll to="nft" smooth={true} duration={500}>NFTs</LinkScroll>
+                  <LinkScroll to="about" smooth={true} duration={500}>
+                    About
+                  </LinkScroll>
                 </div>
 
                 <div
@@ -1891,7 +1897,22 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                     marginBottom: "0px",
                   }}
                 >
-                <LinkScroll to="chart" smooth={true} duration={500}>Chart</LinkScroll>
+                  <LinkScroll to="nft" smooth={true} duration={500}>
+                    NFTs
+                  </LinkScroll>
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    marginBottom: "0px",
+                  }}
+                >
+                  <LinkScroll to="chart" smooth={true} duration={500}>
+                    Chart
+                  </LinkScroll>
                 </div>
               </Stack>
             </Collapse>
@@ -1899,11 +1920,8 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
 
           {/* Desktop Links */}
 
-
-          <ConnectButton  label="Connect"/>
-
+          <ConnectButton label="Connect" />
         </Flex>
-
       </Box>
 
       <Box
@@ -1917,11 +1935,8 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
         bgRepeat="no-repeat"
         bgSize="cover"
       >
-        <Container maxW="container.xl" p={1} color="white">{/* Navigation */}
-
-
-
-
+        <Container maxW="container.xl" p={1} color="white">
+          {/* Navigation */}
 
           <Flex direction="column" gap={4}>
             <Box minH="20px" bg="" p={4} borderRadius="lg" marginTop="20px">
@@ -1929,7 +1944,6 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                 src={manOnly}
                 alt="Main Text Logo"
                 className="logobodyheader"
-
               />
 
               <div
@@ -1954,7 +1968,8 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
               >
                 0x689cC7BB716AfF448DcA16a8b61253C7E246D9Fc
               </div>
-              <Box id="token"
+              <Box
+                id="token"
                 flex="1"
                 minW="160px"
                 p={4}
@@ -1962,8 +1977,7 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                 textAlign="center"
                 borderRadius="lg"
               >
-
-            <a
+                <a
                   href="https://pancakeswap.finance/swap?outputCurrency=0x689cC7BB716AfF448DcA16a8b61253C7E246D9Fc"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1987,50 +2001,44 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                 >
                   Buy Now
                 </a>
-
-                              </Box>
-                              <Box id="token"
-                                flex="1"
-                                minW="160px"
-                                p={4}
-                                m={2}
-                                textAlign="center"
-                                borderRadius="lg"
-                              >
-
-                            <a
-                                  href="https://dexscreener.com/bsc/0x511f4f91b5147243088bb07e1f192f160f009e82"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  style={{
-                                    padding: "8px 16px",
-                                    fontSize: "16px",
-                                    fontWeight: "bold",
-                                    color: "white",
-                                    backgroundColor: "#e79000",
-                                    textDecoration: "none",
-                                    textAlign: "center",
-                                    borderRadius: "4px",
-                                    display: "inline-block",
-                                  }}
-                                  onMouseOver={(e) => {
-                                    e.currentTarget.style.backgroundColor = "#ff9d0b"; // Darker #e79000 on hover
-                                  }}
-                                  onMouseOut={(e) => {
-                                    e.currentTarget.style.backgroundColor = "#e79000"; // Original #e79000
-                                  }}
-                                >
-                                  Dex Screener Chart
-                                </a>
-
+              </Box>
+              <Box
+                id="token"
+                flex="1"
+                minW="160px"
+                p={4}
+                m={2}
+                textAlign="center"
+                borderRadius="lg"
+              >
+                <a
+                  href="https://dexscreener.com/bsc/0x511f4f91b5147243088bb07e1f192f160f009e82"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: "8px 16px",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    color: "white",
+                    backgroundColor: "#e79000",
+                    textDecoration: "none",
+                    textAlign: "center",
+                    borderRadius: "4px",
+                    display: "inline-block",
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.backgroundColor = "#ff9d0b"; // Darker #e79000 on hover
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.backgroundColor = "#e79000"; // Original #e79000
+                  }}
+                >
+                  Dex Screener Chart
+                </a>
               </Box>
             </Box>
 
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
-            >
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
               <Box
                 flex="1"
                 minW="160px"
@@ -2145,7 +2153,7 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
               </Box>
             </Flex>
 
-            <Box minH="200px"  p={4} borderRadius="lg">
+            <Box minH="200px" p={4} borderRadius="lg">
               <div
                 style={{
                   fontSize: "16px",
@@ -2154,20 +2162,15 @@ borderRadius="md" // Optional: adjust the border radius if you need rounded corn
                   marginBottom: "20px",
                 }}
               >
-Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to holders. Earn up to 9x reflections by staking in our pools.
-
+                Man Token, a BSC based hyper rewards token, provides XRP BEP20
+                reflections to holders. Earn up to 9x reflections by staking in
+                our pools.
               </div>
             </Box>
 
-
-
-
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Box id="token"
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
+              <Box
+                id="token"
                 flex="1"
                 minW="160px"
                 bg="rgba(31, 31, 31, 0.4)"
@@ -2200,11 +2203,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
               </Box>
             </Flex>
 
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
-            >
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
               <Box
                 flex="1"
                 minW="160px"
@@ -2235,11 +2234,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
               </Box>
             </Flex>
 
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
-            >
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
               <Box
                 flex="1"
                 minW="240px"
@@ -2316,46 +2311,28 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
               </Box>
             </Flex>
 
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
+              <Box
+                flex="1"
+                minW="160px"
+                p={4}
+                m={2}
+                textAlign="center"
+                borderRadius="lg"
+              >
+                <div
+                  style={{
+                    fontSize: "24px",
+                    fontWeight: "bolder",
+                    marginTop: "100px",
+                  }}
+                ></div>
+              </Box>
+            </Flex>
 
-            >
-
-  <Box
-
-    flex="1"
-    minW="160px"
-    p={4}
-    m={2}
-    textAlign="center"
-    borderRadius="lg"
-  >
-    <div
-      style={{
-        fontSize: "24px",
-        fontWeight: "bolder",
-        marginTop: "100px",
-      }}
-    >
-    </div>
-  </Box>
-
-
-</Flex>
-
-
-
-                        <Flex
-                          wrap="wrap"
-                          justifyContent="space-between"
-                          alignItems="center"
-
-                        >
-
-              <Box  id="staking"
-
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
+              <Box
+                id="staking"
                 flex="1"
                 minW="160px"
                 bg="rgba(31, 31, 31, 0.4)"
@@ -2374,10 +2351,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   Token Staking
                 </div>
               </Box>
-
-
             </Flex>
-
 
             <Flex direction={{ base: "column", md: "row" }} gap={4}>
               <Box
@@ -2479,65 +2453,62 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                           : "N/A"}
                         x Reflections Multiplier
                       </div>
-                        <div
-                          style={{
-                            fontSize: "24px",
-                            fontWeight: "bold",
-                            textAlign: "center",
-                            marginBottom: "20px",
-                          }}
-                        >
-                         $0.0USD Value of XRP Tokens Distibuted already to holders
-                        </div>
-
+                      <div
+                        style={{
+                          fontSize: "24px",
+                          fontWeight: "bold",
+                          textAlign: "center",
+                          marginBottom: "20px",
+                        }}
+                      >
+                        $0.0USD Value of XRP Tokens Distibuted already to holders
+                      </div>
                     </div>
                   </Box>
 
-                                                          <Box
-                                                            flex={1}
-                                                            p={4}
-                                                            m={2}
-                                                            display="flex"
-                                                            flexDirection="column"
-                                                            borderRadius="lg"
-                                                            bg="rgba(213, 143, 45, 0.7)"
-                                                            bgPosition="center"
-                                                            bgRepeat="no-repeat"
-                                                            bgSize="cover"
-                                                          >
-                                                              <div
-                                                                style={{
-                                                                  fontSize: "18px",
-                                                                  fontWeight: "bold",
-                                                                  textAlign: "center",
-                                                                  marginTop: "30px",
-                                                                }}
-                                                              >
-                                                                XRP Reflections distributed regularly!
-                                                              </div>
-                                                              <div
-                                                                style={{
-                                                                  fontSize: "12px",
-                                                                  fontWeight: "bold",
-                                                                  textAlign: "center",
-                                                                  marginTop: "20px",
-                                                                }}
-                                                              >
-                                                                Cant wait, you can manual Claim now for all users (you pay the gas to manual claim)
-                                                              </div>
+                  <Box
+                    flex={1}
+                    p={4}
+                    m={2}
+                    display="flex"
+                    flexDirection="column"
+                    borderRadius="lg"
+                    bg="rgba(213, 143, 45, 0.7)"
+                    bgPosition="center"
+                    bgRepeat="no-repeat"
+                    bgSize="cover"
+                  >
+                    <div
+                      style={{
+                        fontSize: "18px",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        marginTop: "30px",
+                      }}
+                    >
+                      XRP Reflections distributed regularly!
+                    </div>
+                    <div
+                      style={{
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Cant wait, you can manual Claim now for all users (you pay
+                      the gas to manual claim)
+                    </div>
 
-                                                          <Button
-                                                            onClick={onClaimClick}
-                                                            textColor='white'
-                                                            bg="#e79000"
-                                                            _hover={{ bg: "#ff9d0b" }}
-                                                          >
-                                                            Claim pending Rewards
-                                                          </Button>
-
-
-
-                                                          </Box>
+                    <Button
+                      onClick={onClaimClick}
+                      textColor="white"
+                      bg="#e79000"
+                      _hover={{ bg: "#ff9d0b" }}
+                    >
+                      Claim pending Rewards
+                    </Button>
+                  </Box>
                 </Box>
               </Box>
 
@@ -2552,7 +2523,6 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                 bgRepeat="no-repeat"
                 bgSize="cover"
               >
-
                 <Tabs isFitted variant="enclosed" flex="1">
                   <TabList mb="1em">
                     <Tab>14 Days</Tab>
@@ -2593,7 +2563,6 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                             Receive 2x Reflections on staked tokens in this pool
                           </div>
 
-
                           <Box
                             display="flex"
                             flexDirection="column"
@@ -2620,9 +2589,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               <Button
                                 onClick={() =>
                                   setStakeAmount(
-                                    Math.floor(
-                                      +availableBalance - 1,
-                                    ).toString(),
+                                    Math.floor(+availableBalance - 1).toString(),
                                   )
                                 } // Subtract 1 from available balance, convert to number, then back to string
                                 ml="2"
@@ -2757,9 +2724,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               <Button
                                 onClick={() =>
                                   setStakeAmount30Days(
-                                    Math.floor(
-                                      +availableBalance - 1,
-                                    ).toString(),
+                                    Math.floor(+availableBalance - 1).toString(),
                                   )
                                 } // Subtract 1 from available balance, convert to number, then back to string
                                 ml="2"
@@ -2806,8 +2771,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               marginTop: "5px",
                             }}
                           >
-                            Your Tokens Staked for 30 Days:{" "}
-                            {tokensStaked30Days}
+                            Your Tokens Staked for 30 Days: {tokensStaked30Days}
                           </div>
 
                           <div
@@ -2894,9 +2858,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               <Button
                                 onClick={() =>
                                   setStakeAmount90Days(
-                                    Math.floor(
-                                      +availableBalance - 1,
-                                    ).toString(),
+                                    Math.floor(+availableBalance - 1).toString(),
                                   )
                                 } // Subtract 1 from available balance, convert to number, then back to string
                                 ml="2"
@@ -2942,8 +2904,7 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               marginTop: "5px",
                             }}
                           >
-                            Your Tokens Staked for 90 Days:{" "}
-                            {tokensStaked90Days}
+                            Your Tokens Staked for 90 Days: {tokensStaked90Days}
                           </div>
 
                           <div
@@ -2971,37 +2932,36 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                     </TabPanel>
 
                     <TabPanel>
+                      {/*              <Box
+                        flex={1}
+                        p={4}
+                        m={2}
+                        display="flex"
+                        flexDirection="column"
+                        borderRadius="lg"
+                        bg="rgba(213, 143, 45, 0.8)"
+                        bgPosition="center"
+                        bgRepeat="no-repeat"
+                        bgSize="cover"
+                      >
 
-      {/*              <Box
-                      flex={1}
-                      p={4}
-                      m={2}
-                      display="flex"
-                      flexDirection="column"
-                      borderRadius="lg"
-                      bg="rgba(213, 143, 45, 0.8)"
-                      bgPosition="center"
-                      bgRepeat="no-repeat"
-                      bgSize="cover"
-                    >
+                        <ZapToLP />
+                      </Box>
 
-                      <ZapToLP />
-                    </Box>
+  */}
 
-*/}
-
-                    <Box
-                      flex={1}
-                      p={4}
-                      m={2}
-                      display="flex"
-                      flexDirection="column"
-                      borderRadius="lg"
-                      bg="rgba(197, 76, 76, 0.8)"
-                      bgPosition="center"
-                      bgRepeat="no-repeat"
-                      bgSize="cover"
-                    >
+                      <Box
+                        flex={1}
+                        p={4}
+                        m={2}
+                        display="flex"
+                        flexDirection="column"
+                        borderRadius="lg"
+                        bg="rgba(197, 76, 76, 0.8)"
+                        bgPosition="center"
+                        bgRepeat="no-repeat"
+                        bgSize="cover"
+                      >
                         <div
                           style={{
                             fontSize: "18px",
@@ -3048,11 +3008,10 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                               }}
                             >
                               NOTE: This section will burn your tokens! Once
-                              transaction is confirmed, you will have removed these
-                              tokens from your wallet and destroyed these tokens.
-                              Please understand what you are doing here!
+                              transaction is confirmed, you will have removed
+                              these tokens from your wallet and destroyed these
+                              tokens. Please understand what you are doing here!
                             </div>
-
 
                             <Button
                               onClick={burnTokens}
@@ -3073,7 +3032,6 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
             </Flex>
 
             <Box
-
               flex="1"
               minW="160px"
               p={4}
@@ -3087,17 +3045,11 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   fontWeight: "bolder",
                   marginTop: "45px",
                 }}
-              >
-              </div>
+              ></div>
             </Box>
-            <Flex
-              wrap="wrap"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-
-
-              <Box id="about"
+            <Flex wrap="wrap" justifyContent="space-between" alignItems="center">
+              <Box
+                id="about"
                 flex="1"
                 minW="160px"
                 bg="rgba(31, 31, 31, 0.4)"
@@ -3122,7 +3074,11 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                       marginBottom: "20px",
                     }}
                   >
-                  Man Token is all about giving back to the community.  We want to be known as the Man's token. For all Mankind to share in. We begin with offering strong rewards. NFT's for holders,  and partnerships that will grow us. Having a name that as the Man Community We will take crypto to the people.
+                    Man Token is all about giving back to the community. We want
+                    to be known as the Man's token. For all Mankind to share in.
+                    We begin with offering strong rewards. NFT's for holders, and
+                    partnerships that will grow us. Having a name that as the Man
+                    Community We will take crypto to the people.
                   </div>
                   <div
                     style={{
@@ -3132,8 +3088,10 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                       marginBottom: "20px",
                     }}
                   >
-                  We host a weekly Telegram Chat each Friday night. There we bring projects in for short impersonal AMA'S then end it with some fun Kentucky Derby style Horse Races. Chance to win NFT's, Tokens, Prizes, and More. We call this The DeFi Derby!
-
+                    We host a weekly Telegram Chat each Friday night. There we
+                    bring projects in for short impersonal AMA'S then end it with
+                    some fun Kentucky Derby style Horse Races. Chance to win
+                    NFT's, Tokens, Prizes, and More. We call this The DeFi Derby!
                   </div>
                   <div
                     style={{
@@ -3143,11 +3101,11 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                       marginBottom: "20px",
                     }}
                   >
-                  This is truly a Project that is taking reflections to the next level! Just holding this Man Token you will receive 6% reflections in XRP. But let's take it steps further. We are introducing our in contract staking pools.
-
+                    This is truly a Project that is taking reflections to the next
+                    level! Just holding this Man Token you will receive 6%
+                    reflections in XRP. But let's take it steps further. We are
+                    introducing our in contract staking pools.
                   </div>
-
-
                 </div>
                 <Box
                   display="flex"
@@ -3183,30 +3141,29 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   {copySuccess && <div>{copySuccess}</div>}
                 </Box>
 
-
-                                      <Box
-                                        p={4}
-                                        color="white"
-                                        textAlign="center" // Align text and content to the center
-                                        display="flex" // Use Flexbox
-                                        flexDirection="column" // Stack items vertically
-                                        alignItems="center" // Center items horizontally
-                                        justifyContent="center" // Center items vertically (if there's height specified)
-
-                                      >
-                                <div
-                                  style={{ fontSize: "16px", fontWeight: "bolder", marginTop: "15px" }}
-                                >
-                                  0x689cC7BB716AfF448DcA16a8b61253C7E246D9Fc
-                                </div>
-                              </Box>
+                <Box
+                  p={4}
+                  color="white"
+                  textAlign="center" // Align text and content to the center
+                  display="flex" // Use Flexbox
+                  flexDirection="column" // Stack items vertically
+                  alignItems="center" // Center items horizontally
+                  justifyContent="center" // Center items vertically (if there's height specified)
+                >
+                  <div
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "bolder",
+                      marginTop: "15px",
+                    }}
+                  >
+                    0x689cC7BB716AfF448DcA16a8b61253C7E246D9Fc
+                  </div>
+                </Box>
               </Box>
             </Flex>
 
-
-
             <Box
-
               flex="1"
               minW="160px"
               p={4}
@@ -3220,12 +3177,10 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   fontWeight: "bolder",
                   marginTop: "45px",
                 }}
-              >
-              </div>
+              ></div>
             </Box>
 
-
-            <Box  minH="100px" bg="rgba(31, 31, 31, 0.4)" p={4} borderRadius="lg">
+            <Box minH="100px" bg="rgba(31, 31, 31, 0.4)" p={4} borderRadius="lg">
               <div
                 style={{
                   fontSize: "16px",
@@ -3242,7 +3197,6 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   <Box
                     flex="1"
                     minW="160px"
-
                     p={4}
                     m={2}
                     textAlign="center"
@@ -3263,102 +3217,93 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                         fontWeight: "bolder",
                         marginTop: "15px",
                       }}
-                    >
-                    </div>
+                    ></div>
                   </Box>
 
-
-
-
-                <Box
-                  minH="350px"
-
-                  marginTop="15px"
-                  p={4}
-                  borderRadius="lg"
-                  bg="gray.800"
-                  bgImage={`url(${derbyImage})`}
-                  bgPosition="center"
-                  bgRepeat="no-repeat"
-                  bgSize="cover"
-                >
-
-
-                  <div
-                    style={{
-                      fontSize: "24px",
-                      fontWeight: "bolder",
-                      marginTop: "84px",
-                    }}
+                  <Box
+                    minH="350px"
+                    marginTop="15px"
+                    p={4}
+                    borderRadius="lg"
+                    bg="gray.800"
+                    bgImage={`url(${derbyImage})`}
+                    bgPosition="center"
+                    bgRepeat="no-repeat"
+                    bgSize="cover"
                   >
-                    Defi Derby Winners Circle NFTs
-                  </div>
+                    <div
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "bolder",
+                        marginTop: "84px",
+                      }}
+                    >
+                      Defi Derby Winners Circle NFTs
+                    </div>
 
+                    <div
+                      style={{
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        marginTop: "85px",
+                      }}
+                    >
+                      Experience the excitement of horse racing with NFTs at just
+                      $5.00USD each, starting with race 1! Win prizes totaling
+                      $250.00USD in this electrifying event. Beyond the thrill,
+                      join the defi derby winners circle for more than just
+                      excitement; your $5.00USD ticket supports Hope Rescued,
+                      directly contributing $200.00USD to their cause, making you
+                      part of a movement for positive change.
+                    </div>
 
+                    <a
+                      href="https://tofunft.com/discover/items?contracts=90532"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        padding: "8px 16px",
+                        fontSize: "16px",
+                        fontWeight: "bold",
+                        color: "white",
+                        backgroundColor: "#e79000",
+                        textDecoration: "none",
+                        textAlign: "center",
+                        borderRadius: "4px",
+                        display: "inline-block",
+                        marginTop: "40px",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.backgroundColor = "#ff9d0b"; // Darker #e79000 on hover
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.backgroundColor = "#e79000"; // Original #e79000
+                      }}
+                    >
+                      Derby NFT
+                    </a>
+                  </Box>
+                </Flex>
 
-
-                <div
-                  style={{
-                    fontSize: "12px",
-                    fontWeight: "bold",
-                    textAlign: "center",
-                    marginTop: "85px",
-                  }}
-                >
-                Experience the excitement of horse racing with NFTs at just $5.00USD each, starting with race 1! Win prizes totaling $250.00USD in this electrifying event. Beyond the thrill, join the defi derby winners circle for more than just excitement; your $5.00USD ticket supports Hope Rescued, directly contributing $200.00USD to their cause, making you part of a movement for positive change.
-                </div>
-
-
-                  <a
-                    href="https://tofunft.com/discover/items?contracts=90532"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      padding: "8px 16px",
-                      fontSize: "16px",
-                      fontWeight: "bold",
-                      color: "white",
-                      backgroundColor: "#e79000",
-                      textDecoration: "none",
-                      textAlign: "center",
-                      borderRadius: "4px",
-                      display: "inline-block",
-                      marginTop: "40px"
-                    }}
-                    onMouseOver={(e) => {
-                      e.currentTarget.style.backgroundColor = "#ff9d0b"; // Darker #e79000 on hover
-                    }}
-                    onMouseOut={(e) => {
-                      e.currentTarget.style.backgroundColor = "#e79000"; // Original #e79000
-                    }}
+                <Flex direction={{ base: "row", md: "row" }} gap={4}>
+                  <Box
+                    flex={1}
+                    bg=""
+                    p={0}
+                    m={0}
+                    h="500px"
+                    display="flex"
+                    flexDirection="column"
+                    borderRadius="lg"
                   >
-                    Derby NFT
-                  </a>
-                </Box>
-
-
-
-              </Flex>
-
-              <Flex direction={{ base: "row", md: "row" }} gap={4}>
-                                      <Box  flex={1} bg="" p={0} m={0} h="500px" display="flex" flexDirection="column" borderRadius="lg">
-                                      <NftMint />
-                                      </Box>
-                        </Flex>
-
-
-
-
-
-
-
+                    <NftMint />
+                  </Box>
+                </Flex>
               </div>
             </Box>
 
-
-
             <Box
-
               flex="1"
               minW="160px"
               p={4}
@@ -3372,74 +3317,131 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                   fontWeight: "bolder",
                   marginTop: "45px",
                 }}
-              >
-              </div>
+              ></div>
             </Box>
 
-
-
-            <Flex justifyContent="center" bg="rgba(31, 31, 31, 0.4)" p={4} borderRadius="lg" textAlign="center" flexDirection="column">
-                  <Box fontSize="24px" fontWeight="bold" mb="20px">
-                    Friends and Partners
-                  </Box>
-                  <SimpleGrid columns={{ base: 2, md: 3 }} spacing="20px" justifyContent="center" width="auto">
-                    {partnerImages.map((partner, index) => (
-                      <Box bg="rgba(42, 44, 45, 0.4)" key={index} p="4" borderRadius="lg" display="flex"  flexDirection="column" alignItems="center" _hover={{ transform: 'scale(1.05)', transition: 'transform .2s' }}>
-                        <Image src={partner.src} alt={partner.alt} borderRadius="full" boxSize="45px" objectFit="cover" mb="2" />
-                        <Text fontSize="sm" fontWeight="bold">{partner.name}</Text>
-                        <Link href={partner.url} isExternal color="blue.500" mt="2">More Info</Link>
-                      </Box>
-                    ))}
-                  </SimpleGrid>
-                </Flex>
-
-
-
-
-                <Box
-
-                  flex="1"
-                  minW="160px"
-                  p={4}
-                  m={2}
-                  textAlign="center"
-                  borderRadius="lg"
-                >
-                  <div
-                    style={{
-                      fontSize: "24px",
-                      fontWeight: "bolder",
-                      marginTop: "45px",
+            <Flex
+              justifyContent="center"
+              bg="rgba(31, 31, 31, 0.4)"
+              p={4}
+              borderRadius="lg"
+              textAlign="center"
+              flexDirection="column"
+            >
+              <Box fontSize="24px" fontWeight="bold" mb="20px">
+                Friends and Partners
+              </Box>
+              <SimpleGrid
+                columns={{ base: 2, md: 3 }}
+                spacing="20px"
+                justifyContent="center"
+                width="auto"
+              >
+                {partnerImages.map((partner, index) => (
+                  <Box
+                    bg="rgba(42, 44, 45, 0.4)"
+                    key={index}
+                    p="4"
+                    borderRadius="lg"
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    _hover={{
+                      transform: "scale(1.05)",
+                      transition: "transform .2s",
                     }}
                   >
-                  </div>
-                </Box>
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      borderRadius="full"
+                      boxSize="45px"
+                      objectFit="cover"
+                      mb="2"
+                    />
+                    <Text fontSize="sm" fontWeight="bold">
+                      {partner.name}
+                    </Text>
+                    <Link href={partner.url} isExternal color="blue.500" mt="2">
+                      More Info
+                    </Link>
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Flex>
 
+            <Box
+              flex="1"
+              minW="160px"
+              p={4}
+              m={2}
+              textAlign="center"
+              borderRadius="lg"
+            >
+              <div
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bolder",
+                  marginTop: "45px",
+                }}
+              ></div>
+            </Box>
 
+            <Flex
+              justifyContent="center"
+              bg="rgba(31, 31, 31, 0.4)"
+              p={4}
+              borderRadius="lg"
+              textAlign="center"
+              flexDirection="column"
+            >
+              <Box fontSize="24px" fontWeight="bold" mb="20px">
+                Team behind The Man
+              </Box>
+              <SimpleGrid
+                columns={{ base: 2, md: 4 }}
+                spacing="20px"
+                justifyContent="center"
+                width="auto"
+              >
+                {teamImages.map((team, index) => (
+                  <Box
+                    key={index}
+                    p="4"
+                    borderRadius="lg"
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    _hover={{
+                      transform: "scale(1.05)",
+                      transition: "transform .2s",
+                    }}
+                  >
+                    <Image
+                      src={team.src}
+                      alt={team.alt}
+                      borderRadius="full"
+                      boxSize="50px"
+                      objectFit="cover"
+                      mb="2"
+                    />
 
-                                <Flex justifyContent="center" bg="rgba(31, 31, 31, 0.4)" p={4} borderRadius="lg" textAlign="center" flexDirection="column">
-                                      <Box fontSize="24px" fontWeight="bold" mb="20px">
-                                        Team behind The Man
-                                      </Box>
-                                      <SimpleGrid columns={{ base: 2, md: 4 }} spacing="20px" justifyContent="center" width="auto">
-                                        {teamImages.map((team, index) => (
-                                          <Box  key={index} p="4" borderRadius="lg" display="flex"  flexDirection="column" alignItems="center" _hover={{ transform: 'scale(1.05)', transition: 'transform .2s' }}>
-                                            <Image src={team.src} alt={team.alt} borderRadius="full" boxSize="50px" objectFit="cover" mb="2" />
-
-                                            <Text fontSize="sm" fontWeight="normal">{team.title}</Text>
-                                            <Text fontSize="sm" fontWeight="normal">{team.title2}</Text>
-                                            <Text fontSize="md" fontWeight="bold">{team.name}</Text>
-                                          </Box>
-                                        ))}
-                                      </SimpleGrid>
-                                    </Flex>
-
+                    <Text fontSize="sm" fontWeight="normal">
+                      {team.title}
+                    </Text>
+                    <Text fontSize="sm" fontWeight="normal">
+                      {team.title2}
+                    </Text>
+                    <Text fontSize="md" fontWeight="bold">
+                      {team.name}
+                    </Text>
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Flex>
           </Flex>
 
-
-
           <Box
-
             flex="1"
             minW="160px"
             p={4}
@@ -3453,55 +3455,59 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
                 fontWeight: "bolder",
                 marginTop: "45px",
               }}
-            >
-            </div>
+            ></div>
           </Box>
 
+          <Flex
+            justifyContent="center"
+            marginTop="15px"
+            marginBottom="45px"
+            bg="rgba(0, 0, 0, 0.9)"
+            p={4}
+            borderRadius="lg"
+            textAlign="center"
+            flexDirection="column"
+          >
+            <div>
+              <Select
+                placeholder="Select box"
+                onChange={(e) => setSelectedBox(e.target.value)}
+              >
+                <option value="1">TMT-BNB </option>
+                <option value="2">TMT-BNB</option>
+                <option value="3">TMT-BNB</option>
+              </Select>
 
-          <Flex justifyContent="center" marginTop="15px" marginBottom="45px"  bg="rgba(0, 0, 0, 0.9)" p={4} borderRadius="lg" textAlign="center" flexDirection="column">
+              {selectedBox === "1" && (
+                <Box id="box1" minH="400px" bg="grey.700">
+                  {/* Box 1 Content */}
+                  <div id="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark&trades=0&info=0"></iframe>
+                  </div>
+                </Box>
+              )}
 
-          <div>
-<Select placeholder="Select box" onChange={(e) => setSelectedBox(e.target.value)}>
-<option value="1">TMT-BNB </option>
-<option value="2">TMT-BNB</option>
-<option value="3">TMT-BNB</option>
-</Select>
+              {selectedBox === "2" && (
+                <Box id="box2" minH="400px" bg="grey.700">
+                  {/* Box 2 Content */}
+                  <div id="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark"></iframe>
+                  </div>
+                </Box>
+              )}
 
-{selectedBox === '1' && (
-<Box id="box1" minH="400px" bg="grey.700">
-{/* Box 1 Content */}
-<div id="dexscreener-embed">
-<iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark&trades=0&info=0"></iframe>
-</div>
-</Box>
-)}
-
-{selectedBox === '2' && (
-<Box id="box2" minH="400px" bg="grey.700">
-{/* Box 2 Content */}
-<div id="dexscreener-embed">
-<iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark"></iframe>
-</div>
-</Box>
-)}
-
-{selectedBox === '3' && (
-<Box id="box3" minH="400px" bg="grey.700">
-{/* Box 3 Content */}
-<div id="dexscreener-embed">
-<iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark&trades=0&info=0"></iframe>
-</div>
-</Box>
-)}
-</div>
-                                    </Flex>
+              {selectedBox === "3" && (
+                <Box id="box3" minH="400px" bg="grey.700">
+                  {/* Box 3 Content */}
+                  <div id="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/bsc/0x511f4f91B5147243088BB07E1F192F160f009e82?embed=1&theme=dark&trades=0&info=0"></iframe>
+                  </div>
+                </Box>
+              )}
+            </div>
+          </Flex>
         </Container>
-
-
-
-
       </Box>
-
 
       <Box
         p={4}
@@ -3540,40 +3546,29 @@ Man Token, a BSC based hyper rewards token, provides XRP BEP20 reflections to ho
         >
           The Man Token 2024
         </div>
-
       </Box>
       {showTopBtn && (
         <button
-         style={{
-
-
-
-
-
-
-
-           position: 'fixed',
-           bottom: '40px',
-           right: '40px',
-           opacity: 0.7, // Make the button slightly transparent
-           backgroundColor: 'rgba(255, 255, 0, 0.5)', // Semi-transparent yellow
-           border: 'none',
-           cursor: 'pointer',
-           transition: 'opacity 0.5s ease', // Smooth transition for the opacity
-         }}
-         onClick={goToTop}
-
-  onMouseOver={() => setButtonOpacity(1)}
-  onMouseOut={() => setButtonOpacity(0.7)}
-       >
-         ↑
-       </button>
-       )}
-     </>
+          style={{
+            position: "fixed",
+            bottom: "40px",
+            right: "40px",
+            opacity: 0.7, // Make the button slightly transparent
+            backgroundColor: "rgba(255, 255, 0, 0.5)", // Semi-transparent yellow
+            border: "none",
+            cursor: "pointer",
+            transition: "opacity 0.5s ease", // Smooth transition for the opacity
+          }}
+          onClick={goToTop}
+          onMouseOver={() => setButtonOpacity(1)}
+          onMouseOut={() => setButtonOpacity(0.7)}
+        >
+          ↑
+        </button>
+      )}
+    </>
   );
-  };
 
   export default App;
 
-
-//
+  //
