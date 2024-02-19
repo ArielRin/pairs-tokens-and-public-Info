@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  color: white; /* Set default text color to white */
+  background-color: black;
+  /* Remove padding-top from here */
+}
+
+/* Fixed Header Styles */
+header {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure header spans entire width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  z-index: 1000; /* Ensures header stays above all other content */
+}
+
+.connect-button {
+  margin-left: auto;
+}
+
+.logoheader {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+.header-text {
+  font-size: 98px; /* Increased font size */
+  font-weight: bold; /* Make the text bolder */
+}
+
+/* Wrapper Styles */
+.wrapper {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+.logobody {
+  display: block; /* Use block level for proper alignment */
+  margin: 0 auto; /* Center the logo */
+  max-width: 100%; /* Ensure it's responsive and doesn't overflow */
+  height: 125px; /* Maintain aspect ratio */
+}
+.logobodyheader {
+  display: block; /* Use block level for proper alignment */
+  margin: 0 auto; /* Center the logo */
+  max-width: 100%; /* Ensure it's responsive and doesn't overflow */
+  height: 290px; /* Maintain aspect ratio */
+}
+
+.lpbody {
+  display: block; /* Use block level for proper alignment */
+  margin: 0 auto; /* Center the logo */
+  max-width: 100%; /* Ensure it's responsive and doesn't overflow */
+  height: 100px; /* Maintain aspect ratio */
+}
+/* Main Container Styles */
+.container1 {
+  background-size: cover;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Row Styles */
+.row {
+  width: 100%;
+  min-height: 350px;
+  color: white;
+  display: flex;
+  border-radius: 25px;
+}
+
+
+.row-1 {
+  min-height: 200px;
+  border-radius: 25px;
+  color: white;
+  padding: 0 20%; /* 20% padding on each side */
+  display: flex; /* Align items with flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.row-1_0 {
+  min-height: 90px;
+  border-radius: 25px;
+  color: white;
+  padding: 0 15%; /* 15% padding on each side */
+  display: flex; /* Align items with flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.row-1_1 {
+  min-height: 140px;
+  border-radius: 25px;
+  color: white;
+  padding: 0 15%; /* 15% padding on each side */
+  display: flex; /* Align items with flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(0, 0, 0, 0.6); /* or any other desired background */
+}
+
+.row-3 {
+  min-height: 500px;
+  border-radius: 25px;
+  color: white;
+  padding: 0 15%; /* 15% padding on each side */
+  display: flex; /* Align items with flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(0, 0, 0, 0.6); /* or any other desired background */
+}
+
+.row-4 {
+  min-height: 75px;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.row-2 {
+  min-height: 500px;
+  border-radius: 25px;
+  color: white;
+  padding: 0 15%; /* 15% padding on each side */
+  display: flex; /* Align items with flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(0, 0, 0, 0.6); /* or any other desired background */
+    min-width: 700px;
+    flex-grow: 1;
+}
+
+/* Column Styles */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 3.21px;
+}
+
+.column-left, .column-right {
+  min-width: 700px;
+  flex-grow: 1;
+}
+
+.sub-row {
+  flex-grow: 1;
+  min-height: 200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row-2 {
+    flex-direction: column;
+  }
+
+  .column-left, .column-right {
+    min-width: 100%;
+  }
+}
+
+
+#dexscreener-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
+}
+
+@media (min-width: 1400px) {
+    #dexscreener-embed {
+        padding-bottom: 65%;
+    }
+}
+
+#dexscreener-embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+
+
+
+.social-links {
+    display: flex;
+}
+
+.social-links p {
+    margin: 0; /* Removes default paragraph margins for cleaner spacing */
+    padding-right: 15px; /* Adds right padding to each link */
+    font-size: 0.9rem;
+}
+
+
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 32px;
+  height: auto;
+  margin-right: 14px;
+}
+
+
+
+   .black-section {
+     background-color: rgba(17, 16, 17, 0.9);
+     color: white;
+     padding: 20px;
+     border-radius: 15px; /* Adjust the radius as needed */
+   }
+   /* ... other styles ... */

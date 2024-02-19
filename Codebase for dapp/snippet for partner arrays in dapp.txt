@@ -1,0 +1,15 @@
+
+// Array of partner images
+const partnerImages = [
+
+  { src: affinityImage, alt: 'Affinity', name: "Affinity", url: "https://t.me/affinitydefi" },
+  { src: rocketfiImage, alt: 'RocketFi', name: "RocketFi", url: "https://t.me/RocketFi" },
+  { src: reflectrImage, alt: 'ReflectR', name: "ReflectR", url: "https://t.me/reflectrtoken" },
+  { src: bcrImage, alt: 'Baby Creed', name: "Baby Creed", url: "https://t.me/BabyCreedToken" },
+  { src: manLogo, alt: 'Partners', name: "Ongoing Partners", url: "https://themantoken.com" },
+  { src: manLogo, alt: 'Partners', name: "Upcoming Partners", url: "https://themantoken.com" },
+];
+
+
+// add to partners by create new line.
+// insert logo import as image alt name partners name and url to partners partner Link
