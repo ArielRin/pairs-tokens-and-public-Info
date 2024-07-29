@@ -31,7 +31,3 @@ An "obscure pair" in the context of Automated Market Makers (AMMs) and decentral
 ## Conclusion
 
 While the concept of using an arbitrage platform in conjunction with AMMs to enhance liquidity through obscure token pairs is innovative, its practical execution and effectiveness are highly doubtful. The natural trading dynamics, coupled with the operational principles of AMMs, suggest that such a strategy might not be viable in achieving the intended liquidity enhancement and value compounding.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
