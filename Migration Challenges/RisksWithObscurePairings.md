@@ -1,6 +1,4 @@
-# Obscure Pairing and Liquidity in AMMs
-
-
+# Arbitrage Platform for Enhancing Liquidity in AMMs
 
 ## Overview
 
@@ -9,7 +7,6 @@ The proposition to utilize an arbitrage platform to enhance liquidity through ob
 ## Definition of an Obscure Pair
 
 An "obscure pair" in the context of Automated Market Makers (AMMs) and decentralized finance (DeFi) refers to a trading pair composed of two tokens that are not widely traded or known, and both tokens often have transaction taxes applied to them. These pairs typically have low trading volumes, low liquidity, and higher volatility compared to more popular trading pairs. They might include tokens from niche projects, newly launched tokens, or tokens that are not listed on major exchanges. The presence of transaction taxes on both tokens in the pair further exacerbates the challenges, as these taxes significantly increase the cost of trading, discourage trading activity, and contribute to the pair's low liquidity and high volatility.
-
 
 ## Key Challenges
 
@@ -24,6 +21,7 @@ An "obscure pair" in the context of Automated Market Makers (AMMs) and decentral
 ### 3. Transaction Taxes
 - **High Transaction Costs:** Tokens in a pair with high transaction taxes significantly increase the overall cost for traders.
 - **Discouraged Trading Activity:** Increased transaction costs can discourage trading activity, leading to even lower liquidity.
+- **Non-Transactability on AMMs:** High transaction taxes can make these pairs practically non-transactable on AMMs, as the cost of each trade becomes prohibitively high.
 
 ### 4. Contribution to Total Value Locked (TVL)
 - **Negligible Contribution:** Obscure pairs with low liquidity contribute little to the overall liquidity and TVL of a project.
