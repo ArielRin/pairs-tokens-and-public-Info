@@ -1,4 +1,4 @@
-# Arbitrage Platform for Enhancing Liquidity in AMMs
+# Obscure Pairs and Liquidity Challenges in AMMs
 
 ## Overview
 
