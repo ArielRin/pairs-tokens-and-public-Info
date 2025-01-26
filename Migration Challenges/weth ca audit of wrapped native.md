@@ -1,10 +1,9 @@
 
-# **Smart Contract Audit Report**
+# **Smart Contract Audit Report GPT**
 
 **Contract:** Wrapped Ether (WETH)  
 **Version:** 1.0  
 **Date:** January 15, 2025  
-**Auditor:** ChatGPT, OpenAI
 
 ---
 
